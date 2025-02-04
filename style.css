@@ -1,0 +1,105 @@
+/* General styles */
+body {
+    background-image: url('kura.PNG');
+    background-size: cover; /* Adjust the image to cover the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fix the background image during scrolling */
+    background-position: center; /* Center the background image */
+    color: white; /* Set text color to white */
+}
+
+/* General header styling */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(43, 43, 40, 0.8); /* Add a semi-transparent background color */
+}
+
+/* Logo styling */
+.logo {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* General navbar styling */
+.navbar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start; /* Ensure items are aligned to the start */
+    align-items: center;
+}
+
+/* Navbar links */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Centered image */
+.centered-image {
+    display: block;
+    margin: 20px auto;
+    width: 50%; /* Adjust the width as needed */
+    object-fit: cover;
+}
+
+/* Styled text */
+.styled-text {
+    font-weight: bold; /* Make text bold */
+    font-family: 'Arial', sans-serif; /* Set font family */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        width: 100px; /* Adjust width to fit content */
+        height: 100px; /* Maintain a reasonable height */
+        margin-right: 0; /* Remove right margin */
+        border-radius: 50%; /* Keep the circular shape */
+    }
+}
